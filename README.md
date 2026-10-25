@@ -112,14 +112,58 @@ Bigger or longer networks do not always perform better. The train-test gap can i
 5. **In the Draw & Classify tab**, look up **test images #24, #4, and #6** with the
    "Test image number" box. For each one, write down the true label, the canonical network's
    prediction, and its confidence. Take a screenshot of image #6.
+<img width="552" height="433" alt="Captura de pantalla 2026-10-25 094542" src="https://github.com/user-attachments/assets/1f8c24bf-63fd-4bc1-ae77-b6cd2a30f783" />
+<img width="560" height="437" alt="Captura de pantalla 2026-10-25 094530" src="https://github.com/user-attachments/assets/f952a301-7acb-43f5-8f80-a7b69f0266ac" />
+<img width="560" height="433" alt="Captura de pantalla 2026-10-25 094512" src="https://github.com/user-attachments/assets/b86bb822-9c11-4cb4-97c6-dcb60b2c1c2d" />
 
+Image #24
+
+True label: 7
+Prediction: 7
+Confidence: 100.0%
+Image #4
+
+True label: 4
+Prediction: 4
+Confidence: 85.9%
+Image #6
+
+True label: 9
+Prediction: 4
+Confidence: 56.0%
+The canonical network misclassified image #6. The true label was 9, but the network predicted 4 because the handwritten digit looks similar to a 4.
+
+Number of misclassified test images: (copy the number shown in the “Where the canonical network gets it wrong” section).
    
 ---
 6. **Draw at least 3 digits of your own** on the canvas and note what the network answers each
    time. Take a screenshot of at least one attempt, including the small "What the network sees"
    image.
 
+- NUMBER 2
+<img width="584" height="617" alt="image" src="https://github.com/user-attachments/assets/4f8dee5c-438c-458c-8c55-185034658353" />
 
+- NUMBER 7
+
+  <img width="580" height="484" alt="image" src="https://github.com/user-attachments/assets/27b2c283-157a-46ab-8c2e-8975961e4d83" />
+
+- NUMBER 9
+<img width="576" height="427" alt="image" src="https://github.com/user-attachments/assets/2a2c3d91-2d32-409b-a063-95c3fd251de0" />
+
+
+**Drawing 1:**
+
+Drawn digit: 2
+Network prediction: 2
+Drawing 2:
+**
+Drawn digit: 7**
+Network prediction: 7
+Drawing 3:
+
+**Drawn digit: 9**
+Network prediction: 4
+My drawings can be harder to classify than the MNIST test images because they may be off-center, have different stroke thicknesses, contain noise, or be written in a style that differs from the training data. The network was trained on standardized handwritten digits, while personal drawings may vary significantly in shape and position.
 
 ---
 7. **Fill out `A15_ReflectionQuestions.md`**, using the exact numbers from your screenshots, and
