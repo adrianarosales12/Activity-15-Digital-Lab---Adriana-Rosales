@@ -26,6 +26,25 @@ finally test it on your own handwriting (**Session 27**: neural networks applied
 1. **In the Meet the Network tab**, study the canonical network: its layers, its number of
    trainable parameters, its train/test accuracy and loss, and its training curves. Take a
    screenshot of the diagram and the five numbers below it.
+<img width="617" height="613" alt="Captura de pantalla 2026-10-25 084855" src="https://github.com/user-attachments/assets/8574871b-cb04-4fff-9985-21f1777cdac2" />
+
+<img width="626" height="237" alt="Captura de pantalla 2026-10-25 085501" src="https://github.com/user-attachments/assets/20b9a2c9-d789-4039-bbca-9a6ba6d7dc65" />
+
+
+   - The canonical network has 784 input neurons, 64 hidden neurons, and 10 output neurons. The input layer contains 784 neurons because each MNIST image is 28 × 28 pixels, and every pixel becomes one numerical input for the network (28 × 28 = 784). The output layer contains 10 neurons because the network must classify digits from 0 to 9, so there is one output neuron for each possible digit.
+
+**TRAINABLE PARAMETERS**   
+   - The network has 50,890 trainable parameters.
+   - Input - Hidden layer: (784 × 64) + 64 = 50,240
+   - Hidden - Output layer: (64 × 10) + 10 = 650
+   - Total: 50,240 + 650 = 50,890 trainable parameters.
+
+**CANONICALY ACCURACY AND LOSS**
+   - Train accuracy: 97.2%
+   - Test accuracy: 94.1%
+   - Train loss: 0.106
+   - Test loss: 0.201
+
 
 2. **Scroll down to "What did the hidden neurons learn?"** Pick one neuron whose picture looks
    like it has a clear shape and take a screenshot of it.
