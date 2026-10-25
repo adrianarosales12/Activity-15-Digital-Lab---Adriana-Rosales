@@ -46,17 +46,29 @@ finally test it on your own handwriting (**Session 27**: neural networks applied
    - Test loss: 0.201
 
 
+---
+
 2. **Scroll down to "What did the hidden neurons learn?"** Pick one neuron whose picture looks
    like it has a clear shape and take a screenshot of it.
+<img width="212" height="289" alt="image" src="https://github.com/user-attachments/assets/d61dc28f-5c90-48f0-9998-67dbdd9b6e53" />
+
+- I selected Neuron 10. The red areas form a vertical stroke that looks similar to part of the digit "1". The red regions indicate places where ink makes the neuron activate strongly, while the blue regions indicate places where ink makes the neuron stay less active. This pattern was not programmed manually. It was learned automatically during training through back-propagation, as the network adjusted its weights to recognize useful features present in handwritten digits.
 
 
-
+---
 3. **In the Back-propagation tab, leave the learning rate at 0.50** and click **Next step ▶**
    through all 5 steps. Take a screenshot of step 2 (the error) and of step 5 (the weight table and
    the "Error after one update" number).
 
+- **STEP 2 : ERROR**
+<img width="570" height="607" alt="image" src="https://github.com/user-attachments/assets/79799bb5-d99c-4b71-b876-1c19f07c9efe" />
+
+- **STEP 5: ERROR AFETER ONE UPTADE**
+<img width="574" height="529" alt="image" src="https://github.com/user-attachments/assets/428c1038-d14b-406d-a013-5077d2067998" />
+<img width="583" height="478" alt="image" src="https://github.com/user-attachments/assets/2a9d854c-8a4d-4e57-8400-68caf58e3596" />
 
 
+---
 4. **In the Training Lab tab, train at least 4 networks** and keep the run-history table:
    - one with **all settings at their defaults** (you should get exactly the canonical network),
    - one with a learning rate that is **too low**,
@@ -68,19 +80,20 @@ finally test it on your own handwriting (**Session 27**: neural networks applied
 
 
  
-
+---
 5. **In the Draw & Classify tab**, look up **test images #24, #4, and #6** with the
    "Test image number" box. For each one, write down the true label, the canonical network's
    prediction, and its confidence. Take a screenshot of image #6.
 
    
-
+---
 6. **Draw at least 3 digits of your own** on the canvas and note what the network answers each
    time. Take a screenshot of at least one attempt, including the small "What the network sees"
    image.
 
 
 
+---
 7. **Fill out `A15_ReflectionQuestions.md`**, using the exact numbers from your screenshots, and
    submit it along with your labeled screenshots (a `.zip` with the `.md` file and the images is
    fine).
