@@ -366,7 +366,7 @@ This application is very similar to the digit-recognition task performed in this
 A real risk occurs when the network makes a mistake. For example, in test image #6 the network confused a handwritten 9 with a 4. If the same type of error happened while reading a postal code, a package or letter could be delivered to the wrong destination, causing delays, increased costs, or lost mail. This demonstrates why accuracy is important and why neural-network predictions should sometimes be verified when the confidence is low.
 
 
-
+---
 
 # References:
 - [Streamlit documentation](https://docs.streamlit.io/)
