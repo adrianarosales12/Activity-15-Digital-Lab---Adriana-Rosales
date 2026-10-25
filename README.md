@@ -78,6 +78,34 @@ finally test it on your own handwriting (**Session 27**: neural networks applied
    Then experiment freely to find the best test accuracy you can. Take a screenshot of your run
    history table.
 
+<img width="551" height="628" alt="Captura de pantalla 2026-10-25 093522" src="https://github.com/user-attachments/assets/ad116fcd-11be-4d5e-8cc8-74944ec22ff2" />
+<img width="565" height="616" alt="Captura de pantalla 2026-10-25 093317" src="https://github.com/user-attachments/assets/ce6dc172-0eff-4103-a01b-b3217b6cdd8e" />
+<img width="563" height="629" alt="Captura de pantalla 2026-10-25 093231" src="https://github.com/user-attachments/assets/f9f2e37f-e80a-454b-aea1-24005bb6d6e8" />
+<img width="558" height="637" alt="Captura de pantalla 2026-10-25 093606" src="https://github.com/user-attachments/assets/6cf215a3-ab9c-4318-9fd9-99f6e7531c83" />
+
+- The default network achieved 94.1% test accuracy and 97.2% train accuracy.
+
+The network with a very low learning rate (0.001) achieved 55.4% test accuracy and 56.6% train accuracy. The accuracy was still increasing at the end of training, showing that the network was learning too slowly and needed more epochs.
+
+The network with a very high learning rate (10.0) achieved only 10.0% test accuracy and 10.0% train accuracy. The updates were too large, preventing the network from converging and causing it to perform no better than random guessing.
+
+The default configuration produced the best performance among these required experiments.
+
+   -**My best configuration was:**
+
+Hidden layers: 1
+Neurons per hidden layer: 64
+Activation function: sigmoid
+Learning rate: 0.5
+Epochs: 10
+Batch size: 32
+Initial weights: small random
+
+   -**Results:**
+Train accuracy: 97.2%
+Test accuracy: 94.1%
+Train-test gap: 3.1 points
+Bigger or longer networks do not always perform better. The train-test gap can increase when a network becomes too complex or trains for too long, which may lead to overfitting. In my experiments, the default configuration achieved the best test accuracy.
 
  
 ---
